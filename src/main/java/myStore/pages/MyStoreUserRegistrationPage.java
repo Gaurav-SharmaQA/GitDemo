@@ -23,7 +23,7 @@ public class MyStoreUserRegistrationPage {
 	private By customer_lastname = By.id("customer_lastname");
 	private By email = By.id("email");
 	private By passwd = By.id("passwd");
-	private By firstname = By.id("firstname1");
+	private By firstname = By.id("firstname");
 	private By lastname = By.id("lastname");
 	private By address1 = By.id("address1");
 	private By city = By.id("city");
