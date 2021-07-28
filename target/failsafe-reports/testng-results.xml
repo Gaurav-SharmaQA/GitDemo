@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="63630" started-at="2021-07-21T18:04:09 IST" finished-at="2021-07-21T18:05:13 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.MyStoreTestRunner@5e853265]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="63630" started-at="2021-07-21T18:04:09 IST" finished-at="2021-07-21T18:05:13 IST">
+      <class name="testrunner.MyStoreTestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunner.MyStoreTestRunner@5e853265]" name="setUpClass" is-config="true" duration-ms="656" started-at="2021-07-21T18:04:09 IST" finished-at="2021-07-21T18:04:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.MyStoreTestRunner@5e853265]" name="runScenario" duration-ms="59593" started-at="2021-07-21T18:04:10 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-07-21T18:05:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["My Store User Registration"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Automate User Registration Process of E-Commerce Website using Selenium]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h3[contains(text(),'Your personal information')]"}
+  (Session info: MicrosoftEdge=91.0.864.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GAURAV', ip: '192.168.1.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 91.0.864.71, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59995}, msedge: {msedgedriverVersion: 91.0.864.71 (67485ed0df3354..., userDataDir: C:\Users\Gaurav\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d5dcefec53b1153bd252e5ad1aed34b4
+*** Element info: {Using=xpath, value=//h3[contains(text(),'Your personal information')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h3[contains(text(),'Your personal information')]"}
+  (Session info: MicrosoftEdge=91.0.864.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GAURAV', ip: '192.168.1.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 91.0.864.71, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59995}, msedge: {msedgedriverVersion: 91.0.864.71 (67485ed0df3354..., userDataDir: C:\Users\Gaurav\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d5dcefec53b1153bd252e5ad1aed34b4
+*** Element info: {Using=xpath, value=//h3[contains(text(),'Your personal information')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at myStore.pages.MyStoreUserRegistrationPage.getHeaderText(MyStoreUserRegistrationPage.java:70)
+at myStoreStepDefinitions.MyStoreUserRegistrationPageSteps.fill_the_user_details(MyStoreUserRegistrationPageSteps.java:101)
+at ✽.Fill the user Details(file:///C:/Users/Gaurav/git/HRMSCucumberMavenFramework/HRMS/src/test/resource/myStoreFeatures/MyStoreRegistration.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner.MyStoreTestRunner@5e853265]" name="tearDownClass" is-config="true" duration-ms="3341" started-at="2021-07-21T18:05:10 IST" finished-at="2021-07-21T18:05:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunner.MyStoreTestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

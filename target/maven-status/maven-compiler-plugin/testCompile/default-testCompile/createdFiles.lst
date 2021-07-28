@@ -1,0 +1,6 @@
+stepDefinitions\HRMSAdminDashboardPageSteps.class
+hrmsHooks\Hook.class
+myStoreStepDefinitions\MyStoreUserRegistrationPageSteps.class
+stepDefinitions\LoginHRMSPageSteps.class
+testrunner\HRMSTestRunner.class
+testrunner\MyStoreTestRunner.class
