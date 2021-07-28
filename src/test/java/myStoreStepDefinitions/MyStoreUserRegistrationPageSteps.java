@@ -89,7 +89,7 @@ public class MyStoreUserRegistrationPageSteps {
 			userRegistration.enterEmail().sendKeys(enterEmail);
 			userRegistration.SubmitCreate().click();
 			System.out.println("Clicked on Create an Account button!" );
-			Thread.sleep(5000);
+			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
